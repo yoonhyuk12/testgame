@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헬리콥터 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>헬리콥터 게임</h1>
+        <div class="score-board">
+            <div class="score">점수: <span id="score">0</span></div>
+            <div class="high-score">최고 점수: <span id="highScore">0</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="instructions">
+            <p>스페이스바를 눌러 헬리콥터를 띄우세요!</p>
+            <p>장애물을 피해서 최대한 오래 살아남으세요!</p>
+            <button id="startBtn">게임 시작</button>
+        </div>
+        <div class="game-over" id="gameOver">
+            <h2>게임 오버!</h2>
+            <p>점수: <span id="finalScore">0</span></p>
+            <button id="restartBtn">다시 시작</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
